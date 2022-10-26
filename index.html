@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Website</title>
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+
+    <!------NAVIGATION----BAR---START---->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo-container">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="./imgs/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="logo-title">
+                        <a href="#">
+                            <p>Weather <br><span>tagline goes here</span></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-links">
+                    <li>
+                        <ul><a class="home" href="#">Home</a></ul>
+                        <ul><a href="#">News</a></ul>
+                        <ul><a href="#">Live cameras</a></ul>
+                        <ul><a href="#">Photos</a></ul>
+                        <ul><a href="#">Contact</a></ul>
+                    </li>
+                </div>
+                <div class="mobile-menu" id="mobileMenu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <div class="nav-links-mobile active" id="mobileContainer">
+                </li>
+                <ul><a class="home" href="#">Home</a></ul>
+                <ul><a href="#">News</a></ul>
+                <ul><a href="#">Live cameras</a></ul>
+                <ul><a href="#">Photos</a></ul>
+                <ul><a href="#">Contact</a></ul>
+            </li>
+            </div>
+        </div>
+    </header>
+
+    <!--------NAVIGATION----BAR---END------>
+
+
+    <!-- ------------- HOME CONTENT START-------- -->
+    <section class="body">
+        <div class="hero">
+            <div class="container">
+                <form class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="searchLocation" placeholder="Find your location...">
+                    <butaton class="find-location" id="findLocation">
+                        Find
+                    </butaton>
+                </form>
+            </div>
+        </div>
+        <div class="container" id="forecast">
+            <div class="row">
+                <div class="col-4">
+                    <div class="box-container">
+                        <div class="box-title">
+                            <div class="box-day">
+                                <p id="day1"></p>
+                            </div>
+                            <div class="box-date">
+                                <p id="date1"></p>
+                            </div>
+                        </div>
+                        <div class="city">
+                            <p id="cityName"></p>
+                        </div>
+                        <div class="box-content-1">
+                            <div class="temperature-value">
+                                <p id="day1Max"></p>
+                            </div>
+                            <div class="weather-icon margin custom">
+                                <img id="day1Icon" src="">
+                            </div>
+                        </div>
+                        <div class="temperature-description">
+                            <p id="weatherStatusDay1"></p>
+                        </div>
+                        <div class="weather-status">
+                            <div class="rain-precentage">
+                                <img src="./imgs/icon-umberella.png" alt="">
+                                <span id="rainPrecentage">%</span>
+                            </div>
+                            <div class="wind-speed">
+                                <img src="./imgs/icon-wind.png" alt="">
+                                <span id="windSpeed">km/h</span>
+                            </div>
+                            <div class="wind-direction">
+                                <img src="./imgs/icon-compass.png" alt="">
+                                <span id="windDirection"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="box-container background">
+                        <div class="box-title text-center">
+                            <div class="box-day-2">
+                                <p id="day2"></p>
+                            </div>
+                        </div>
+                        <div class="box-content">
+                            <div class="weather-icon margin">
+                                <img id="day2Icon" src="">
+                            </div>
+                            <div class="temperature-value">
+                                <p class="max-temp" id="day2Max">°C</p>
+                                <p class="min-temp" id="day2Min">°</p>
+                            </div>
+                            <div class="temperature-description">
+                                <p id="weatherStatusDay2"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="box-container">
+                        <div class="box-title text-center">
+                            <div class="box-day-3">
+                                <p id="day3"></p>
+                            </div>
+                        </div>
+                        <div class="box-content">
+                            <div class="weather-icon margin">
+                                <img id="iconDay3" src="">
+                            </div>
+                            <div class="temperature-value">
+                                <p class="max-temp" id="day3Max">°C</p>
+                                <p class="min-temp" id="day3Min">°</p>
+                            </div>
+                            <div class="temperature-description">
+                                <p id="day3WeatherStatus"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear-fix"></div>
+    </section>
+
+    <!------------ HOME CONTENT END----------->
+
+    <!--------FOOTER SECTION START--------->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-container">
+                    <div class="footer-content">
+                        <div class="col-input">
+                            <form class="search-bar">
+                                <input class="subscribe-bar" type="text" id="subscribeBar" placeholder="Enter your email to subscribe...">
+                                <button class="subscribe-btn">
+                                    Subscribe
+                                </button>
+                            </form>
+                        </div>
+                        <div class="col-footer-social">
+                            <div class="social-links">
+                                <a class="link-circle" href="#">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a class="link-circle" href="#">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <a class="link-circle" href="#">
+                                    <i class="fa-brands fa-google-plus-g"></i>
+                                </a>
+                                <a class="link-circle" href="#">
+                                    <i class="fa-brands fa-pinterest"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="copyright">Copyright 2022 Designed By <a href="#">Mohamed Hamdy</a> All rights reserved</p>
+                </div>
+            </div>
+                </div>
+    </footer>
+    <!-- --------FOOTER SECTION END--------- -->
+    <script src="./JS/index.js"></script>
+    <script src="./JS/all.min.js"></script>
+</body>
+
+</html>
