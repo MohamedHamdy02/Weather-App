@@ -184,7 +184,6 @@ input {
     flex-wrap: wrap;
     width: 97%;
     margin-top: -11rem;
-    margin-bottom: 3rem;
     margin-right: auto;
     margin-left: auto;
 }
@@ -201,7 +200,7 @@ input {
 }
 
 .box-title {
-    display: block ruby;
+    display: flow-root;
     padding: 1rem;
     margin-bottom: 1rem;
     background-color: rgba(0, 0, 0, 0.1);
@@ -326,6 +325,7 @@ input {
 .footer {
     background-color: #262936;
     padding-top: 12rem;
+    margin-top: 4rem;
 }
 
 .footer-container {
@@ -430,12 +430,6 @@ input {
     .col-4 {
         flex-basis: 33.3%;
         margin-top: 3rem;
-    }
-}
-
-@media only screen and (max-width: 1120px) {
-    .box-content {
-        margin-bottom: .8rem;
     }
 }
 
